@@ -1,0 +1,137 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, form, input {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a universal box-sizing rule */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    text-align: center; /* Center text */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #fff;
+    color: #333;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: center;
+}
+
+#search-box {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    position: center;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background: #333;
+    color: #fff;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 40px); /* Adjust the width if there's padding on the body */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #search-box, input[type="submit"] {
+        width: 70%;
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+.content-container, .form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.team-photo {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Centering buttons and forms */
+.button-container, .form-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Centering input elements and labels */
+form label, form input, form button {
+    display: block;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.button-container button {
+    margin: 5px; /* Adds space around buttons */
+}
+
